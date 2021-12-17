@@ -1,7 +1,7 @@
 {
-  "name": "learn-webdriverio",
+  "name": "volvocars-webdriverio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Volvocars test automation assignment",
   "main": "index.js",
   "scripts": {
     "docker-start": "docker-compose up",
@@ -12,11 +12,10 @@
     "smoke":"npm install selenium-standalone -- --mochaOpts.grep smoke",
     "test-report": "npx wdio run ./config/wdio.conf.js",
     "wdio": "wdio run ./config/wdio.conf.js",
-    "local": "npx wdio run ./config/standalone.js",
-    "selenium-standalon": "npm install && npx wdio run ./config/standalone.js"
+    "local": "npx wdio run ./config/standalone.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Somen Singh",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.16.0",

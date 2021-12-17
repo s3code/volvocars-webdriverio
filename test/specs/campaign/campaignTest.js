@@ -34,11 +34,20 @@ describe("Verify the models links are working fine", () => {
 
   });
 
-  it('model displayed smoke', async () => {
-    //"XC90 Recharge"
-    //S60 Recharge
-    let car = await campaignPage.getExploreModelPage().clickToBuy("XC90 Recharge", RECHARGE_TYPE_HYBRID);
-    await wdioExpect(browser).toHaveTitleContaining("XC90 Recharge");
+  it("Verify clicking on 'XC90 Recharge Hybrid' car navigates to XC90 Recharge page  smoke", async () => {
+
+    const car = "XC90 Recharge";
+    await campaignPage.getExploreModelPage().clickToBuy(car, RECHARGE_TYPE_HYBRID);
+    await wdioExpect(browser).toHaveTitleContaining(car);
+
+  })
+  // uncomment this to fail the script
+
+  it("Verify clicking on 'XC90 Recharge Hybrid' car navigates to XC60 Recharge page", async () => {
+
+    const car2 = "XC60 Recharge";
+    await campaignPage.getExploreModelPage().clickToBuy(car2, RECHARGE_TYPE_HYBRID);
+    await wdioExpect(browser).toHaveTitleContaining(car2 + 1);
 
   })
 
