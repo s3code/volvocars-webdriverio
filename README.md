@@ -4,6 +4,10 @@
 
 Basically this is a sample test automation assignment developed in simple light structuring.
 
+*** **IMPORTANT** ***
+
+*Framework is aligned to latest annoucement from webdriverio to move on over Async mode.*
+
 ## Tools and technlogies used:
 
 - **Framework:** Hybrid
